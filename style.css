@@ -41,8 +41,8 @@ body {
     text-shadow: var(--shadow);
 }
 .hero h1 {
-    font-family: 'Sacramento', cursive;
-    font-size: 5rem;
+    font-family: 'Amalfi Coast', sans-serif;
+    font-size: 2.5rem;
 }
 .hero h4 {
     font-size: 1.6rem;
@@ -70,8 +70,8 @@ body {
     height: 100vh;
 }
 .mynavbar .navbar-brand, .mynavbar .offcanvas-title {
-    font-family: 'Sacramento', cursive;
-    font-size: 2rem;
+    font-family: 'Amalfi Coast', sans-serif;
+    font-size: 1rem;
 }
 .mynavbar .nav-link {
     text-transform: uppercase;
@@ -90,8 +90,8 @@ body {
 }
 .home h2, .info h2, .story h2, .gifts h2 {
     color: black;
-    font-family: 'Sacramento', cursive;
-    font-size: 5rem;
+    font-family: 'Amalfi Coast', sans-serif;
+    font-size: 2.5rem;
     text-shadow: var(--shadow);
     margin-bottom: 1rem;
 }
@@ -108,8 +108,8 @@ body {
     margin-top: 50px;
 }
 .home .couple h3 {
-    font-family: 'Sacramento', cursive;
-    font-size: 2.4rem;
+    font-family: 'Amalfi Coast', sans-serif;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #0a0a0a;
 }
