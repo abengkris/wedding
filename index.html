@@ -9,16 +9,16 @@
     <meta name="title" content="Undangan Pernikahan Arif Zakaria &amp; Ifnu Sakdiah" />
     <meta classname="meta-description" name="description"
         content="Spesial mengundang untuk menghadiri resepsi pernikahan kami. - Arif Zakaria &amp; Ifnu Sakdiah" />
-        <meta property="og:type" content="website" />
-  <meta property="og:title" content="Undangan Pernikahan Arif Zakaria &amp; Ifnu Sakdiah" />
-  <meta classname="meta-description" property="og:description"
-    content="Spesial mengundang untuk menghadiri resepsi pernikahan kami. - Arif Zakaria &amp; Ifnu Sakdiah " />
-  <meta property="og:image" content="img/couple.jpeg" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Undangan Pernikahan Ifnu &amp; Arif " />
-  <meta classname="meta-description" property="twitter:description"
-    content="Spesial mengundang untuk menghadiri resepsi pernikahan kami. - Ifnu &amp; Arif " />
-  <meta property="twitter:image" content="img/couple.jpeg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Undangan Pernikahan Arif Zakaria &amp; Ifnu Sakdiah" />
+    <meta classname="meta-description" property="og:description"
+        content="Spesial mengundang untuk menghadiri resepsi pernikahan kami. - Arif Zakaria &amp; Ifnu Sakdiah " />
+    <meta property="og:image" content="img/couple.jpeg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Undangan Pernikahan Ifnu &amp; Arif " />
+    <meta classname="meta-description" property="twitter:description"
+        content="Spesial mengundang untuk menghadiri resepsi pernikahan kami. - Ifnu &amp; Arif " />
+    <meta property="twitter:image" content="img/couple.jpeg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -268,13 +268,13 @@
                                 <p class="text-center text-sm">
                                     BCA a/n Ifnu Sakdiah
                                 </p>
-                                <p class="text-center text-sm" onclick="copy1()">
+                                <p class="text-center text-sm" data-bs-toggle="modal" data-bs-target="#modal1">
                                     <strong id="myText1">8335379329</strong>
                                 </p>
                                 <p class="text-center text-sm mt-2">
                                     BCA a/n Arif Zakaria
                                 </p>
-                                <p class="text-center text-sm" onclick="copy2()">
+                                <p class="text-center text-sm" data-bs-toggle="modal" data-bs-target="#modal2">
                                     <strong id="myText2">8335417905</strong>
                                 </p>
                                 <p class="text-center fs-6 mt-2">
@@ -287,6 +287,39 @@
                         Atas kehadiran dan do’a restu dari Bapak/Ibu/Saudara/I sekalian, kami mengucapkan Terima Kasih.
                     </p>
                     <p class="amalfi mt-5"><strong>Wassalamualaikum Wr. Wb.</strong></p>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Teralin</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                No rek. Ifnu Sakdiah sudah tersalin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Teralin</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                No rek. Arif Zakaria sudah tersalin
+                            </div>
+                        </div>
+                    </div>
                 </div>
     </section>
 
@@ -338,6 +371,13 @@
     </script>
 
     <script>
+        const myModal = document.getElementById('modal1')
+        const myInput = document.getElementById('click1')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+
         let text1 = document.getElementById('myText1').innerHTML;
         let text2 = document.getElementById('myText2').innerHTML;
 
